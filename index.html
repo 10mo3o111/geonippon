@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/geonippon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Zen+Antique+Soft&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>geonippon</title>
+    <script type="module" crossorigin src="/geonippon/assets/index-SyGiNpzC.js"></script>
+    <link rel="stylesheet" crossorigin href="/geonippon/assets/index-COuffsk6.css">
+  </head>
+  <body>
+    <header class="l_header">
+      <section class="c_header">
+        <h1 class="c_header__maintitle">日本地域ガイド</h1>
+        <p class="c_header__subtitle">Know Japan! Learn with fun quizzes.</p>
+      </section>
+    </header>
+    <main class="l_main">
+      <section class="c_region">
+        <div class="c_region__container">
+          <h2 class="c_region__title">
+            都道府県を選んで、地域を探してみよう！
+          </h2>
+          <p class="c_region__title02">
+            Choose a Prefecture and Explore the Local Areas!
+          </p>
+          <dl>
+            <dt>
+              <label class="c_region__subtitle" for="prefectures"
+                >都道府県選択:</label
+              >
+            </dt>
+            <dd>
+              <select id="prefectures">
+                <option value="">選んでください</option>
+              </select>
+            </dd>
+          </dl>
+
+          <div id="municipality-container" class="municipality-container">
+            <dl>
+              <dt>
+                <label for="municipality">クイズのヒント:市町村区リスト</label>
+              </dt>
+              <dd>
+                <select id="municipality">
+                  <option value="">選んでください</option>
+                </select>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section class="c_quiz">
+        <div class="c_quiz__container">
+          <h2 class="c_quiz__title">ご当地クイズ</h2>
+          <p class="c_quiz__questionText">
+            都道府県を選ぶと、クイズが出てきます！
+          </p>
+          <div class="c_quiz__choice">
+            <dl>
+              <dt class="c_quiz__note is-hidden">答えを1つ選んでください</dt>
+              <dd class="c_quiz__list"></dd>
+            </dl>
+          </div>
+          <p>
+            <output class="c_quiz__result"></output>
+          </p>
+          <div class="c_quiz__buttons">
+            <button
+              type="button"
+              class="c_quiz__btn c_quiz__check is-hidden"
+              disabled
+            >
+              答え合わせ
+            </button>
+            <button
+              type="button"
+              class="c_quiz__btn c_quiz__retry is-hidden"
+              disabled
+            >
+              もう1問チャレンジ
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="l_footer">
+      <p class="c_footer__title">JavaScript / TypeScript Portfolio Site</p>
+    </footer>
+  </body>
+</html>
