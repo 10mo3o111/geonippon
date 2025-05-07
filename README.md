@@ -22,4 +22,4 @@
 - **Vite** - 開発サーバーとビルドツール
 - **Stylelint** - CSSのコード品質管理
 - **gh-pages** - デプロイツール
-- **Vite Plugin for Stylelint** - ViteとStylelintを統合
+
