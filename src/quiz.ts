@@ -88,7 +88,7 @@ if (quizCheck && quizResult && quizRetry && quizList) {
 // クイズデータの取得
 async function getQuizData(): Promise<QuizData | ErrorData> {
   try {
-    const responseData = await fetch("/quiz.json");
+    const responseData = await fetch(`${import.meta.env.BASE_URL}/quiz.json`);
     if (responseData.ok) {
       return await responseData.json();
     }
